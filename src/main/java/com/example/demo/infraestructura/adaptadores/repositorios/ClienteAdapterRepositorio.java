@@ -21,7 +21,6 @@ public class ClienteAdapterRepositorio implements ListarClienteGateway, Insertar
     }
 
     @Override
-
     public ClientesModel insertarCliente(ClientesModel clientesModel) {
 
         Clientes clientes = ClientesConvertEntity.convertToClientes(clientesModel);
@@ -52,7 +51,7 @@ public class ClienteAdapterRepositorio implements ListarClienteGateway, Insertar
     }
 
     @Override
-    public void eliminarCliente(int id, ClientesModel clientesModel) {
+    public void eliminarCliente(int id) {
 
         Clientes clientes = clienteRepositorio.buscarByIdView(id);
 

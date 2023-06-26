@@ -16,7 +16,6 @@ public class Clientes implements Serializable {
     @Column(name = "numero_identificacion", unique = true, nullable = false, length = 50)
     private String numero_identificacion;
 
-
     @Column(name = "genero", unique = true, nullable = false, length = 50)
     private String genero;
 

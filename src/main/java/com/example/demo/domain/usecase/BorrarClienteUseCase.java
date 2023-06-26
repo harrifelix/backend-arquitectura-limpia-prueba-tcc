@@ -13,8 +13,8 @@ public class BorrarClienteUseCase {
     @Autowired
     private BorrarClienteGateway borrarClienteGateway;
 
-    public void borrar(int id, ClientesModel clienteModel) {
+    public void borrar(int id) {
         log.info("Comenzo la busqueda del cliente con el id 0}", id);
-        borrarClienteGateway.eliminarCliente(id, clienteModel);
+        borrarClienteGateway.eliminarCliente(id);
     }
 }

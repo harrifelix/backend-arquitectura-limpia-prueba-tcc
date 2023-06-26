@@ -39,11 +39,11 @@ public class Cliente {
 
     @DeleteMapping("api/eliminar/{id}")
     public void elimianrClientes(@PathVariable(value = "id") int id) {
-         borrarUseCase.borrar(id,null);
+         borrarUseCase.borrar(id);
     }
 
     @PutMapping("api/actualizar/{id}")
-    public ClientesModel ClientesModel(@PathVariable(value = "id") int id, @RequestBody ClientesModel clientesModel) {
+    public ClientesModel actualizarCliente(@PathVariable(value = "id") int id, @RequestBody ClientesModel clientesModel) {
         return actualizarClienteUseCase.actualizarCliente(id,clientesModel);
     }
 

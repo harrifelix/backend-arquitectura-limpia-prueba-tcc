@@ -2,8 +2,6 @@ package com.example.demo.domain.model.factories;
 
 import com.example.demo.domain.model.entities.ClientesModel;
 
-import java.util.Date;
-
 public final class ClienteFactory {
     private ClienteFactory() {
     }

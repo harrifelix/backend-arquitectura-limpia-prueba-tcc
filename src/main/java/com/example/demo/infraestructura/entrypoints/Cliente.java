@@ -38,7 +38,8 @@ public class Cliente {
     }
 
     @DeleteMapping("api/eliminar/{id}")
-    public void elimianrClientes(@PathVariable(value = "id") int id) {
+    public void elimia}
+    nrClientes(@PathVariable(value = "id") int id) {
          borrarUseCase.borrar(id);
     }
 
